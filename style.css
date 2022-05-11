@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+.cardContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.cardGrid {
+    display: grid;
+    gap: 10px;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.announcementsGrid {
+    display: grid;
+    gap: 10px;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.activityGrid {
+    display: grid;
+    gap: 10px;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.cardGrid > .grid {
+    font-size: medium;
+
+}
+
+.announcementsGrid > .grid {
+    font-size: medium;
+
+}
+
+.activityGrid > .grid {
+    font-size: medium;
+
+}
+
+.sectionTitle {
+    font-size: large;
+    font-weight: bold;
+}
