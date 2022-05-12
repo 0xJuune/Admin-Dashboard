@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-:root {
+:root, body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -47,6 +47,7 @@ input {
     box-shadow: 0px 1px 3px gray;
     z-index: 1;
     padding-left: 15px;
+    padding-right: 25px;
 }
 
 .headerSearchRow {
@@ -80,9 +81,9 @@ input {
 }
 
 .buttonWrap {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px; */
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 15px;
 }
 
 .buttonWrap > button {
@@ -102,6 +103,9 @@ input {
     background-color: dodgerblue;
     color: white;
     padding: 15px;
+    font-size: x-large;
+    font-weight: bold;
+    height: 58rem;
 }
 
 .sidebar > .grid {
@@ -111,9 +115,11 @@ input {
     box-shadow: none;
     background-color: dodgerblue;
     color: white;
+    font-size: medium;
+    font-weight: normal;
 }
 
-.cardContainer{
+.cardContainer {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 240px;
@@ -127,10 +133,16 @@ input {
     /* grid-area: 1 / 1 / 3 / 2; */
     /* grid-template-rows: 25px 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+    gap: 10px;
+    /* padding-bottom: 10px;
+    padding-right: 10px; */
 }
 
 .cardArea {
     grid-area: 1 / 1 / 3 / 2;
+    grid-template-rows: 25px;
+
 }
 
 .announcementsGrid {
@@ -145,7 +157,6 @@ input {
 }
 
 .cardArea,
-.cardGrid,
 .announcementsGrid,
 .activityGrid {
     display: grid;
@@ -178,6 +189,12 @@ input {
 .sectionTitle {
     font-size: large;
     font-weight: bold;
+}
+
+.iconArea {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
 }
 
 .iconArea > img {
