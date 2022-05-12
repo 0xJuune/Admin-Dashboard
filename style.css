@@ -125,6 +125,7 @@ input {
     font-size: 18px;
     font-weight: bold;
     gap: 10px;
+    letter-spacing: .05rem;
 }
 
 .cardContainer {
@@ -148,6 +149,7 @@ input {
 
 .cardGrid > .grid {
     gap: 8px;
+    border-left: .5rem solid rgb(252, 218, 29);
 }
 
 .cardGrid > .grid :nth-child(2) {
@@ -245,6 +247,7 @@ input {
     display: flex;
     justify-content: end;
     align-items: flex-end;
+    gap: 8px;
 }
 
 .iconArea > img {
